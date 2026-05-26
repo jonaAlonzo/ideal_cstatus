@@ -15,6 +15,7 @@ function create_circle(ids_numbers, count_cabecera, name_container_principal_1, 
         container_padre.setAttribute("id", name_container_padre);
         container_principal.appendChild(container_padre);
 
+        // if (cabecera0 == 'cabecera_6' || cabecera0 == 'cabecera_7') {
         if (cabecera0 == 'cabecera_6' || cabecera0 == 'cabecera_7' || cabecera0 == 'cabecera_8') {
             Object.assign(container_padre.style, {
                 background: "black",
@@ -45,6 +46,7 @@ function create_circle(ids_numbers, count_cabecera, name_container_principal_1, 
 
         document.getElementById(name_container_centro).innerHTML = cabecera0.slice(9, 10);
 
+        // if (cabecera0 == 'cabecera_6' || cabecera0 == 'cabecera_7' ) {
         if (cabecera0 == 'cabecera_6' || cabecera0 == 'cabecera_7' || cabecera0 == 'cabecera_8') {
             Object.assign(container_centro.style, {
                 background: "white",
@@ -375,7 +377,6 @@ window.create_legend = function() {
     // Agrega el encabezado
     const headerRow = document.createElement("tr");
     table.appendChild(headerRow);
-
     // Agrega las filas de datos
     levels.slice(0, 3).forEach((level, index) => {
         const row = document.createElement("tr");
