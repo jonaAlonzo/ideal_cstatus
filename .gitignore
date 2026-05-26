@@ -1,0 +1,12 @@
+# Editor-specific files & settings
+.vscode/
+
+# Node.js dependencies
+node_modules/
+
+# mac
+.DS_Store
+
+# files
+*.patch
+
