@@ -231,7 +231,7 @@ function get_role_user($id_user) {
     global $DB;
     try {
         $sql = "
-            SELECT
+            SELECT DISTINCT
                 r.shortname
             FROM
                 {role} r
@@ -253,9 +253,9 @@ function get_legend(){
         ['name' => 'str_A', 'color' => '#0066FF'],
         ['name' => 'str_D', 'color' => '#FF6600'],
         ['name' => 'str_L', 'color' => '#6600FF'],
-        // ['name' => 'str_Soft', 'color' => '#C000FF'],
-        // ['name' => 'str_Ethi', 'color' => '#C000FF'],
-        // ['name' => 'str_IA', 'color' => '#C000FF'],
+        ['name' => 'str_Soft', 'color' => '#C000FF'],
+        ['name' => 'str_Ethi', 'color' => '#C000FF'],
+        ['name' => 'str_IA', 'color' => '#C000FF'],
     ];
 
     for ($i = 0; $i < count($legend); $i++) {
@@ -271,21 +271,24 @@ function get_list_users(){
 
     try {
         $sql = "
-SELECT 
-    u.id,
-    u.firstname,
-    u.lastname,
-    u.email,
-    u.country
-FROM
-    {user} u
-JOIN {competency_usercomp} cu ON
-    cu.userid = u.id
-WHERE
-    cu.proficiency = 1
-GROUP BY
-    u.id, u.firstname, u.lastname, u.email
-    ORDER BY `u`.`firstname` ASC;
+            SELECT DISTINCT
+                u.id,
+                u.firstname,
+                u.lastname,
+                u.firstnamephonetic,
+                u.lastnamephonetic,
+                u.middlename,
+                u.alternatename,
+                u.email,
+                u.country
+            FROM
+                {user} u
+            JOIN {competency_usercomp} cu ON
+                cu.userid = u.id
+            WHERE
+                cu.proficiency = 1
+            ORDER BY
+                u.firstname ASC
         ";
 
         // Obtiene los usuarios
