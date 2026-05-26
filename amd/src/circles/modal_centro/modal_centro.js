@@ -419,6 +419,8 @@ async function loadLearningsPlans(id) {
         }
         if (updatedLearningPlans) {
             for (const [key, learningP] of Object.entries(updatedLearningPlans)) {
+        console.warn(str_registered_+"----"+str_not_registered_+"---"+str_completed_+"---"+str_proccess_+"---"+tr_not_learningP_tooltip);
+        console.warn(learningP);
                 var level_competency = String(learningP.lvl);
                 const learning_a = document.createElement('a');
                 const nivel_div = document.createElement('div');

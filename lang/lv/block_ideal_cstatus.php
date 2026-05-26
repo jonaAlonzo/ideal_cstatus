@@ -36,14 +36,21 @@ $string['help_manage_user'] = 'Izvēlieties valsti, lai filtrētu lietotājus';
 //modal center
 $string['course_list'] = 'Nepieciešamo kompetenču un saistīto kursu saraksts';
 $string['competency_label'] = 'Kompetence';
-$string['Complete'] = 'Pabeigts';
+$string['learning_plan_label'] = 'Mācību plāns';
+$string['not_learning_plan_label'] = 'Mācību plāni nav pieejami';
+$string['Status'] = 'Statuss';
 $string['Level'] = 'Līmenis';
+$string['registered'] = 'Reģistrēts';
+$string['not_registered'] = 'Nav reģistrēts';
 $string['Ir'] = 'Pāriet uz kursu';
 $string['Completed'] = 'Pabeigts';
+$string['In_Progress'] = 'Procesā';
 $string['Pending'] = 'Gaidāms';
 $string['Close'] = 'Aizvērt';
 $string['ProgresoAreasParrafo'] = 'Progresu kompetenču jomās:';
 $string['Avanzar'] = 'Pāriet uz...';
+//POR QUI xlsx
+$string["str_filtradolearning"] = "Izvēlieties valodu, lai skatītu savus mācību plānus: ";
 //cohort enrollment
 $string['idcompetencyinvalid'] = 'Nederīgs kompetences ID';
 $string['userincohort'] = 'Lietotājs ir kohortā:';
@@ -159,12 +166,12 @@ $string['select_cert_cohort'] = 'Izvēlieties valodu, kurā vēlaties reģistrē
 $string['already_enrolled_in'] = 'Jūs jau esat reģistrējies:';
 $string['necesario'] = 'Lai reģistrētos šim sertifikātam, jums ir jābūt pabeigušam visus: <br> Eiropas digitālā pedagoģiskā līdera Sertifikāti.';
 $string['description_help_1'] = '<p style="font-size: 2rem; color:#094bab;font-weight: bold;">
-                                        <a style=color:#094bab; href="https://hub.ideal-future.eu/course/view.php?id=100"> Sāciet ar IDEAL HUB ievadu</a>
+                                        <a style=color:#094bab; href="https://hub.ideal-future.eu/course/view.php?id=175"> Sāciet ar IDEAL HUB ievadu</a>
                                 </p>
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-4">
-                                            <a href="https://hub.ideal-future.eu/course/view.php?id=100" 
+                                            <a href="https://hub.ideal-future.eu/course/view.php?id=175" 
                                                 target="_blank" rel="noopener">
                                                     <img src="../blocks/ideal_cstatus/templates/media/img/title_introduction_lv.png" alt="" width="250" height="194" role="presentation" class="img-fluid ">
                                             </a>
@@ -178,12 +185,12 @@ $string['description_help_1'] = '<p style="font-size: 2rem; color:#094bab;font-w
                                 </div>';
 
 $string['description_help_2'] = '<div style="font-size: 2rem; color:#094bab;font-weight: bold;">
-                                        <a>Kompetenču statuses un reģistrēšanās IDEAL courses</a>
+                                        <a>Kompetenču statuss un reģistrēšanās IDEAL kursiem</a>
                                 </div>
                                 <p style="font-size: 1.2rem;">
-                                    Sadaļā “Personīgo kompetenču statuses” zemāk ar krāsu kodiem varat redzēt kompetences, kuras jau esat apguvuši.
+                                    Sadaļā “Personīgo kompetenču statuss” zemāk ar krāsu kodiem varat redzēt kompetences, kuras jau esat apguvuši.
                                 </p>
                                 <p style="font-size: 1.2rem;">
-                                    Jūs varat arī reģistrēties kursiem konkrētā jomā, noklikšķinot uz skaitļa lielā apļa centrā. Pēc tam jums tiks piedāvāta iespēja reģistrēties šīs jomas kursiem, kas vēlāk parādīsies sadaļā “Mani kursi”.
+                                    Jūs varat arī reģistrēties kursiem konkrētā jomā, noklikšķinot uz skaitļa lielā apļa centrā. Pēc tam Jums tiks piedāvāta iespēja reģistrēties šīs jomas kursiem, kas vēlāk parādīsies sadaļā “Mani kursi”.
                                 </p>';
 ?>

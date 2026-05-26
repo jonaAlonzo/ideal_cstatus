@@ -4,9 +4,16 @@
 # Node.js dependencies
 node_modules/
 
+<<<<<<< HEAD
 # mac
 .DS_Store
 
 # files
+=======
+# MAcOS specific files
+.DS_Store
+
+#files
+>>>>>>> develop
 *.patch
 
